@@ -1,4 +1,4 @@
-{ stdenv, coursier, jre, makeWrapper, lib }:
+{ stdenv, coursier, jre, makeWrapper }:
 
 let
   coursierBootstrap = { pname, version, artifact, alias ? pname, mainClass, sha256, buildInputs ? [ ], ... }@args':
