@@ -8,7 +8,7 @@
       let
         pkgs = import nixpkgs { inherit system; overlays = [ (final: prev: { jre = final.openjdk11; }) ]; };
         coursier = pkgs.callPackage ./coursier.nix { };
-        version = "0.12.0";
+        version = "0.12.7";
       in
       {
         defaultPackage = self.packages.${system}.codegen;
