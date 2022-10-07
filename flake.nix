@@ -3,9 +3,9 @@
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
   outputs = { self, nixpkgs, flake-utils, ... }:
-    let version = "0.13.0"; in
+    let version = "0.16.2"; in
 
-    flake-utils.lib.eachDefaultSystem
+    flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ]
       (
         system:
 
@@ -30,6 +30,7 @@
           smithy4s = {
             codegen = final.callPackage ./derivation.nix {
               inherit (coursier) coursier-tools;
+              inherit version;
             };
           };
         };

@@ -12,8 +12,7 @@ let smithy4sGenerate =
 
     buildPhase = ''
       smithy4s-codegen generate \
-        --output $out/scala \
-        --openapi-output $out/openapi \
+        --output $out \
         ${builtins.concatStringsSep " " specs}
     '';
 
