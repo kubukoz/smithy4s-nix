@@ -2,7 +2,7 @@
 
 let pizzaSpec = builtins.fetchurl {
   url = "https://raw.githubusercontent.com/disneystreaming/smithy4s/v${version}/sampleSpecs/pizza.smithy";
-  sha256 = "sha256:1b5vwahgvjr03a04xnx4lfr7ps4v7ncac7amvk1vwzhwx2m1jmpj";
+  sha256 = "sha256:0y0l407p56fp5bgzfaqbikd0xwaarx166drxmq1r758g6z3z7hys";
 };
 in
 smithy4sGenerate {

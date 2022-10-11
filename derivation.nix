@@ -10,6 +10,6 @@ coursier-tools.coursierBootstrap {
   inherit version pname;
   artifact = "com.disneystreaming.smithy4s::smithy4s-codegen-cli:${version}";
   inherit (channel.smithy4s) mainClass;
-  sha256 = "sha256-pz/UT9IsWV+8ct0MvmW4nHbIXwjF9+Jv+NM1a6TKQrw=";
+  sha256 = "sha256-Rr9ObzVhnxMP/lN17uXO7b+O8cXQIP/HlzHZXTQcrGE=";
 }
 
